@@ -28,6 +28,7 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
+      'no-used-vars': false // Disable the vite.config.js error
     },
   },
 ]
