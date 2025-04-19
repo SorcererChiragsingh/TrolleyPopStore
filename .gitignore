@@ -13,11 +13,22 @@ node_modules
 
 # misc
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-.env
+
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+backend/.env.local
+backend/.env.development.local
+backend/.env.test.local
+backend/.env.production.local
+
+
+
+# local env files
+frontend/.env
+backend/.env
 package-lock.json
 package.json
 
@@ -31,7 +42,8 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
+frontend/node_modules/
+backend/node_modules/
 dist
 dist-ssr
 *.local
