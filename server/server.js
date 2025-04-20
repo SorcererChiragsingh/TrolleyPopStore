@@ -7,12 +7,12 @@ const dotenv = require("dotenv");
 
 
 dotenv.config()
-mongoose.connect(process.env.MONGODB_CONN, { dbName: 'TrolleyPopStore1' })
+mongoose.connect("mongodb+srv://chiragsingh8926:zDMUDYMoUFFBEmAa@trolleypopstore1.2jyvrht.mongodb.net/TrolleyPopStore1?retryWrites=true&w=majority&appName=TrolleyPopStore1")
     .then(() => console.log('Database connected.'))
     .catch(err => console.log('Database connection failed.', err))
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
 
 app.use(
