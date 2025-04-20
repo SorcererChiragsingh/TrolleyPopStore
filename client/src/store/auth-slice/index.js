@@ -1,5 +1,9 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
+import dotenv from 'dotenv'
+import { getEvn } from "./getEnv";
+
+dotenv.config()
 
 const initialState = {
   isAuthenticated: false,
@@ -12,7 +16,7 @@ export const registerUser = createAsyncThunk(
 
   async (formData) => {
     const response = await axios.post(
-      "http://localhost:5000/api/auth/register",
+      `${getEvn('VITE_API_BASE_URL')}/auth/register`,
       formData,
       {
         withCredentials: true,
@@ -28,7 +32,7 @@ export const loginUser = createAsyncThunk(
 
   async (formData) => {
     const response = await axios.post(
-      "http://localhost:5000/api/auth/login",
+      `${getEvn('VITE_API_BASE_URL')}/auth/login`,
       formData,
       {
         withCredentials: true,
@@ -44,7 +48,7 @@ export const logoutUser = createAsyncThunk(
 
   async () => {
     const response = await axios.post(
-      "http://localhost:5000/api/auth/logout",
+      `${getEvn('VITE_API_BASE_URL')}/auth/logout`,
       {},
       {
         withCredentials: true,
@@ -60,7 +64,7 @@ export const checkAuth = createAsyncThunk(
 
   async () => {
     const response = await axios.get(
-      "http://localhost:5000/api/auth/check-auth",
+      `${getEvn('VITE_API_BASE_URL')}/auth/check-auth`,
       {
         withCredentials: true,
         headers: {
