@@ -65,7 +65,7 @@ const loginUser = async (req, res) => {
         userName: checkUser.userName,
       },
       "CLIENT_SECRET_KEY",
-      { expiresIn: "60m" }
+      { expiresIn: "10m" }// cookie expires in 10 minutes, and then the user will be logged out.
     );
 
     res.cookie("token", token, { httpOnly: true, secure: false }).json({

@@ -1,4 +1,4 @@
-import { v2 as cloudinary } from 'cloudinary';
+const cloudinary = require("cloudinary").v2;
 const multer = require("multer");
 // import dotenv from 'dotenv'
 // dotenv.config()
@@ -23,5 +23,3 @@ async function imageUploadUtil(file) {
 const upload = multer({ storage });
 
 module.exports = { upload, imageUploadUtil };
-
-export default cloudinary
