@@ -50,20 +50,40 @@ With TrolleyPopStore, we aim to provide a feature-rich, scalable, and secure e-c
 
 ## Screenshots
 - Home Page : 
-- Product Listing Page :
-- User Authentication Pages :
-- Single Product Page :
-- Wishlist Page :
-- Cart Page :
-- Razorpay integration :
-- Orders Page :
-
+![](https://github.com/SorcererChiragsingh/TrolleyPopStore/blob/main/Images/HomePage.png)
+![](https://github.com/SorcererChiragsingh/TrolleyPopStore/blob/main/Images/ListAllProducts.png)
+- User Login Page :
+![](https://github.com/SorcererChiragsingh/TrolleyPopStore/blob/main/Images/SignIn.png)
+- User SignUp Page :
+![](https://github.com/SorcererChiragsingh/TrolleyPopStore/blob/main/Images/SignUp.png)
+- Admin Add Product Page :
+![](https://github.com/SorcererChiragsingh/TrolleyPopStore/blob/main/Images/AdminAddNewProduct.png)
+- Admin check Order Page :
+![](https://github.com/SorcererChiragsingh/TrolleyPopStore/blob/main/Images/AdminCheckAllOrders.png)
+- Add To Cart Page :
+![](https://github.com/SorcererChiragsingh/TrolleyPopStore/blob/main/Images/AddToCart.png)
+![](https://github.com/SorcererChiragsingh/TrolleyPopStore/blob/main/Images/Cart2.png)
+- Check By Category Page :
+![](https://github.com/SorcererChiragsingh/TrolleyPopStore/blob/main/Images/CategoryMen.png)
+![](https://github.com/SorcererChiragsingh/TrolleyPopStore/blob/main/Images/CategoryWomen.png)
+![](https://github.com/SorcererChiragsingh/TrolleyPopStore/blob/main/Images/Categorykids.png)
+![](https://github.com/SorcererChiragsingh/TrolleyPopStore/blob/main/Images/CategoryFootwear.png)
+![](https://github.com/SorcererChiragsingh/TrolleyPopStore/blob/main/Images/CategoryAccerories.png)
+<!-- - Shop By Brand :
+![](https://github.com/SorcererChiragsingh/TrolleyPopStore/blob/main/Images/HomePage.png)
+![](https://github.com/SorcererChiragsingh/TrolleyPopStore/blob/main/Images/HomePage.png)
+![](https://github.com/SorcererChiragsingh/TrolleyPopStore/blob/main/Images/HomePage.png)
+![](https://github.com/SorcererChiragsingh/TrolleyPopStore/blob/main/Images/HomePage.png)
+![](https://github.com/SorcererChiragsingh/TrolleyPopStore/blob/main/Images/HomePage.png) -->
+- Paypal Payement Integration :
+![](https://github.com/SorcererChiragsingh/TrolleyPopStore/blob/main/Images/PaypalCredentials.png)
+![](https://github.com/SorcererChiragsingh/TrolleyPopStore/blob/main/Images/PaypalSelectMethod.png)
 
 ## Tech Stack
 
 - Frontend: HTML, CSS, JAVASCRIPT & React.Js
 - Backend:  Node JS & Express JS
-- Database: MongoDb
+- Database: MongoDb,cloudinary,Firebase
 - Deployment: Vercel
 
 
@@ -98,18 +118,29 @@ npm install
 
 2️⃣ **Setup Environment Variables:**
 
-Create a `.env` file in the `backend` directory and add the following:
+Create a `.env` file in the `server` directory and add the following:
 
 ```env
-PORT=5000
+FRONTEND_URL= 'http://localhost:5173'
+# PORT=3000
+MONGODB_CONN=""
+JWT_SECRET="djfnsndlknjndferutiuerhtfvjndfvncvxbvhyfeyrwuhrqqasdllop" // random alphabet, that can nver be guessed.
+NODE_ENV="development"
 
+CLOUDINARY_APP_NAME=""
+CLOUDINARY_API_KEY=""
+CLOUDINARY_API_SECRET=""
+
+PayPal_Client_ID=""
+Paypal_Client_Secret=""
 ```
 
-Create a `.env` file in the `frontend` directory and add the following:
+Create a `.env` file in the `client` directory and add the following:
 
 ```env
 PORT=3000
-
+VITE_API_BASE_URL="http://localhost:3000/api"
+VITE_FIREBASE_API=""
 ```
 
 3️⃣ **Start the Backend Server:**
