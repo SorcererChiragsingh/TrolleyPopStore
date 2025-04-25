@@ -8,7 +8,7 @@ import { getAnalytics } from "firebase/analytics";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDtQTJPpwHgdK3WLO2VP4tg9HStiY4oKYE",
+  apiKey: getEvn('VITE_FIREBASE_API'),
   authDomain: "trolleypopstore.firebaseapp.com",
   projectId: "trolleypopstore",
   storageBucket: "trolleypopstore.firebasestorage.app",
