@@ -10,7 +10,7 @@
 
 <p>The "TrolleyPopStore" is a full-fledged web application Project using MERN. The Project uses HTML, CSS, React.Js, Node.Js, MongoDB, JavaScript,  Redux toolkit, JWT Auth, Invoice Creation, Email Template, and Payment Gateway.</p>
 
-<a href="" target="_blank"><strong>➥ Live Demo</strong></a>
+<a href="https://trolley-pop-storemain.vercel.app/" target="_blank"><strong>➥ Live Demo</strong></a>
 
 </div> <br/><br/>
 
