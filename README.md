@@ -10,7 +10,7 @@
 
 <p>The "TrolleyPopStore" is a full-fledged web application Project using MERN. The Project uses HTML, CSS, React.Js, Node.Js, MongoDB, JavaScript,  Redux toolkit, JWT Auth, Invoice Creation, Email Template, and Payment Gateway.</p>
 
-<a href="https://trolley-pop-storemain.vercel.app/" target="_blank"><strong>➥ Live Demo</strong></a>
+<a href="https://trolleypopstore-main.onrender.com/" target="_blank"><strong>➥ Live Demo</strong></a>
 
 </div> <br/><br/>
 
@@ -84,7 +84,7 @@ With TrolleyPopStore, we aim to provide a feature-rich, scalable, and secure e-c
 - Frontend: HTML, CSS, JAVASCRIPT & React.Js
 - Backend:  Node JS & Express JS
 - Database: MongoDb,cloudinary,Firebase
-- Deployment: Vercel
+- Deployment: Vercel, Render
 
 
 ## Roadmap
@@ -122,7 +122,7 @@ Create a `.env` file in the `server` directory and add the following:
 
 ```env
 FRONTEND_URL= 'http://localhost:5173'
-# PORT=3000
+# PORT=5000
 MONGODB_CONN=""
 JWT_SECRET="djfnsndlknjndferutiuerhtfvjndfvncvxbvhyfeyrwuhrqqasdllop" // random alphabet, that can nver be guessed.
 NODE_ENV="development"
@@ -139,7 +139,7 @@ Create a `.env` file in the `client` directory and add the following:
 
 ```env
 PORT=3000
-VITE_API_BASE_URL="http://localhost:3000/api"
+VITE_API_BASE_URL="http://localhost:5000"
 VITE_FIREBASE_API=""
 ```
 
@@ -161,6 +161,10 @@ npm start
 
 Go to [http://localhost:3000](http://localhost:3000) in your browser 🚀
 
+6️⃣ **Use This For PayPal Payement**
+
+->>> Paypal id:- sb-qu3fz40799840@personal.example.com
+->>> Paypal pass:- ]A!>e1Ma
 
 ## Report Issues
 - You can report issues on this project using Github issue.
